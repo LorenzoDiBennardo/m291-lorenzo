@@ -36,4 +36,4 @@ Les objectifs principaux du projet sont :
 Pour récupérer le projet, utilisez la commande suivante :
 
 ```bash
-git clone https://github.com/mon-pseudo/mon-projet.git
+git clone https://github.com/LorenzoDiBennardo/m291-lorenzo.git
