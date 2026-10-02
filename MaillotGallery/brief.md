@@ -43,7 +43,7 @@ Sobre, immersif, collectionneur. Comme une vitrine de musée du sport : maillot 
 - Accent : vert ou électrique bleu sur gaz
 - Attention / erreur : rouge discret
 
-(Couleurs en mots pour l’instant ; hex en s7-s9.)
+
 
 ## Interdits
 
