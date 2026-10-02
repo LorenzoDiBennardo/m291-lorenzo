@@ -1,4 +1,4 @@
-# Brief — [NOM DE L’APP]
+# Brief — MaillotGallery
 
 ## Pitch
 
