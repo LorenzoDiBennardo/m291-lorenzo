@@ -38,10 +38,10 @@ Alessio, 24 ans, étudiant et fan de foot collectionneur. Utilisez l'app surpres
 Sobre, immersif, collectionneur. Comme une vitrine de musée du sport : maillot mis en valeur, peu de distractions autour.
 ## Palette
 
-- Fond : 
-- Texte :
-- Accent :
-- Attention / erreur :
+- Fond : noir ou gris très foncé
+- Texte : blanc cassé
+- Accent : vert ou électrique bleu sur gaz
+- Attention / erreur : rouge discret
 
 (Couleurs en mots pour l’instant ; hex en s7-s9.)
 
