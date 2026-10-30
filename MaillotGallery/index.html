@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MaillotGallery, la vitrine des maillots de foot</title>
+  <meta name="description" content="Parcourez et comparez des maillots de foot : clubs, saisons, sponsors et anecdotes. Une vitrine, pas une boutique.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="lien-evitement" href="#collection">Aller à la collection</a>
+
+  <header class="entete">
+    <div class="entete-contenu">
+      <a class="marque" href="#">MaillotGallery</a>
+      <nav aria-label="Navigation principale">
+        <a href="#collection">Collection</a>
+        <a href="#histoires">Histoires</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="titre-hero">
+      <div class="hero-texte">
+        <h1 id="titre-hero">Chaque maillot raconte un match.</h1>
+        <p class="intro">Clubs, saisons, sponsors et anecdotes. Parcourez la collection et comparez les maillots, sans rien acheter et sans compte.</p>
+        <div class="actions">
+          <a class="bouton bouton-primaire" href="#collection">Voir la collection</a>
+          <a class="bouton" href="#histoires">Lire les histoires</a>
+        </div>
+      </div>
+
+      <aside class="scene" aria-label="Maillot à la une">
+        <article class="a-la-une">
+          <div class="photo-cadre">
+            <div class="photo"><img src="images/fc-barcelone-2014-15.jpg" alt="Maillot domicile du FC Barcelone, saison 2014/15" loading="lazy" onerror="this.remove()"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><defs><clipPath id="c-h-fc-barcelone-2014-15"><path d="M62 18 L22 42 L6 86 L40 100 L46 84 L46 186 L154 186 L154 84 L160 100 L194 86 L178 42 L138 18 Q100 46 62 18 Z"/></clipPath></defs><g clip-path="url(#c-h-fc-barcelone-2014-15)"><rect width="200" height="200" fill="#A50044"/><rect x="24" y="0" width="22" height="200" fill="#004D98"/><rect x="68" y="0" width="22" height="200" fill="#004D98"/><rect x="112" y="0" width="22" height="200" fill="#004D98"/><rect x="156" y="0" width="22" height="200" fill="#004D98"/><path d="M6 86 L40 100" stroke="#F2C200" stroke-width="8"/><path d="M194 86 L160 100" stroke="#F2C200" stroke-width="8"/><path d="M62 18 Q100 46 138 18" fill="none" stroke="#F2C200" stroke-width="8" stroke-linecap="round"/></g><path d="M62 18 L22 42 L6 86 L40 100 L46 84 L46 186 L154 186 L154 84 L160 100 L194 86 L178 42 L138 18 Q100 46 62 18 Z" fill="none" stroke="#000" stroke-width="4" stroke-linejoin="round"/><text x="100" y="104" text-anchor="middle" font-size="12" font-weight="800" fill="#FFFFFF" font-family="inherit">Qatar Airways</text></svg></div>
+          </div>
+          <div class="a-la-une-texte">
+            <h2>FC Barcelone, saison 2014/15</h2>
+            <p>Le maillot du triplé : Liga, Coupe du Roi et Ligue des champions, avec le trio Messi, Suárez et Neymar.</p>
+            <dl class="faits">
+              <div><dt>Équipementier</dt><dd>Nike</dd></div>
+              <div><dt>Sponsor</dt><dd>Qatar Airways</dd></div>
+            </dl>
+            <a class="bouton bouton-primaire" href="#">Voir la fiche</a>
+          </div>
+        </article>
+      </aside>
+    </section>
+
+    <section class="collection" id="collection" aria-labelledby="titre-collection">
+      <div class="section-tete">
+        <h2 id="titre-collection">La collection</h2>
+        <p class="compteur" id="compteur" aria-live="polite">8 maillots</p>
+      </div>
+
+      <div class="outils">
+        <form class="recherche" role="search" action="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 L21 21"/></svg>
+          <label class="invisible" for="recherche">Rechercher un maillot</label>
+          <input id="recherche" type="search" placeholder="Rechercher un maillot" autocomplete="off">
+        </form>
+        <ul class="filtres" aria-label="Filtres">
+          <li><button class="puce" type="button" data-filtre="domicile" aria-pressed="false">Domicile</button></li>
+          <li><button class="puce" type="button" data-filtre="exterieur" aria-pressed="false">Extérieur</button></li>
+          <li><button class="puce" type="button" data-filtre="recent" aria-pressed="false">Saisons 2010 et après</button></li>
+        </ul>
+      </div>
+
+      <ul class="cartes-grille" id="grille">
+        <li class="carte-item" data-type="domicile" data-annee="2023" data-nom="Real Madrid 2023/24 Domicile Sponsor : Emirates Maillot domicile du Real Madrid, saison 2023/24">
+          <article class="carte">
+            <a class="carte-lien" href="#">
+              <div class="photo-cadre">
+                <span class="tag">Domicile</span>
+                <div class="photo"><img src="images/real-madrid-2023-24.jpg" alt="Maillot domicile du Real Madrid, saison 2023/24" loading="lazy" onerror="this.remove()"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><defs><clipPath id="c-g-real-madrid-2023-24"><path d="M62 18 L22 42 L6 86 L40 100 L46 84 L46 186 L154 186 L154 84 L160 100 L194 86 L178 42 L138 18 Q100 46 62 18 Z"/></clipPath></defs><g clip-path="url(#c-g-real-madrid-2023-24)"><rect width="200" height="200" fill="#FFFFFF"/><path d="M6 86 L40 100" stroke="#1B2A5C" stroke-width="8"/><path d="M194 86 L160 100" stroke="#1B2A5C" stroke-width="8"/><path d="M62 18 Q100 46 138 18" fill="none" stroke="#1B2A5C" stroke-width="8" stroke-linecap="round"/></g><path d="M62 18 L22 42 L6 86 L40 100 L46 84 L46 186 L154 186 L154 84 L160 100 L194 86 L178 42 L138 18 Q100 46 62 18 Z" fill="none" stroke="#000" stroke-width="4" stroke-linejoin="round"/><text x="100" y="104" text-anchor="middle" font-size="12" font-weight="800" fill="#1B2A5C" font-family="inherit">Emirates</text></svg></div>
+              </div>
+              <div class="infos">
+                <h3>Real Madrid</h3>
+                <p class="saison">Saison 2023/24</p>
+                <p class="detail">Sponsor : Emirates</p>
+              </div>
+            </a>
+          </article>
+        </li>
+        <li class="carte-item" data-type="domicile" data-annee="2014" data-nom="FC Barcelone 2014/15 Domicile Sponsor : Qatar Airways Maillot domicile du FC Barcelone, saison 2014/15">
+          <article class="carte">
+            <a class="carte-lien" href="#">
+              <div class="photo-cadre">
+                <span class="tag">Domicile</span>
+                <div class="photo"><img src="images/fc-barcelone-2014-15.jpg" alt="Maillot domicile du FC Barcelone, saison 2014/15" loading="lazy" onerror="this.remove()"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><defs><clipPath id="c-g-fc-barcelone-2014-15"><path d="M62 18 L22 42 L6 86 L40 100 L46 84 L46 186 L154 186 L154 84 L160 100 L194 86 L178 42 L138 18 Q100 46 62 18 Z"/></clipPath></defs><g clip-path="url(#c-g-fc-barcelone-2014-15)"><rect width="200" height="200" fill="#A50044"/><rect x="24" y="0" width="22" height="200" fill="#004D98"/><rect x="68" y="0" width="22" height="200" fill="#004D98"/><rect x="112" y="0" width="22" height="200" fill="#004D98"/><rect x="156" y="0" width="22" height="200" fill="#004D98"/><path d="M6 86 L40 100" stroke="#F2C200" stroke-width="8"/><path d="M194 86 L160 100" stroke="#F2C200" stroke-width="8"/><path d="M62 18 Q100 46 138 18" fill="none" stroke="#F2C200" stroke-width="8" stroke-linecap="round"/></g><path d="M62 18 L22 42 L6 86 L40 100 L46 84 L46 186 L154 186 L154 84 L160 100 L194 86 L178 42 L138 18 Q100 46 62 18 Z" fill="none" stroke="#000" stroke-width="4" stroke-linejoin="round"/><text x="100" y="104" text-anchor="middle" font-size="12" font-weight="800" fill="#FFFFFF" font-family="inherit">Qatar Airways</text></svg></div>
+              </div>
+              <div class="infos">
+                <h3>FC Barcelone</h3>
+                <p class="saison">Saison 2014/15</p>
+                <p class="detail">Sponsor : Qatar Airways</p>
+              </div>
+            </a>
+          </article>
+        </li>
+        <li class="carte-item" data-type="domicile" data-annee="1998" data-nom="Manchester United 1998/99 Domicile Sponsor : Sharp Maillot domicile de Manchester United, saison 1998/99">
+          <article class="carte">
+            <a class="carte-lien" href="#">
+              <div class="photo-cadre">
+                <span class="tag">Domicile</span>
+                <div class="photo"><img src="images/manchester-united-1998-99.jpg" alt="Maillot domicile de Manchester United, saison 1998/99" loading="lazy" onerror="this.remove()"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><defs><clipPath id="c-g-manchester-united-1998-99"><path d="M62 18 L22 42 L6 86 L40 100 L46 84 L46 186 L154 186 L154 84 L160 100 L194 86 L178 42 L138 18 Q100 46 62 18 Z"/></clipPath></defs><g clip-path="url(#c-g-manchester-united-1998-99)"><rect width="200" height="200" fill="#DA291C"/><path d="M6 86 L40 100" stroke="#FFFFFF" stroke-width="8"/><path d="M194 86 L160 100" stroke="#FFFFFF" stroke-width="8"/><path d="M62 18 Q100 46 138 18" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/></g><path d="M62 18 L22 42 L6 86 L40 100 L46 84 L46 186 L154 186 L154 84 L160 100 L194 86 L178 42 L138 18 Q100 46 62 18 Z" fill="none" stroke="#000" stroke-width="4" stroke-linejoin="round"/><text x="100" y="104" text-anchor="middle" font-size="12" font-weight="800" fill="#FFFFFF" font-family="inherit">Sharp</text></svg></div>
+              </div>
+              <div class="infos">
+                <h3>Manchester United</h3>
+                <p class="saison">Saison 1998/99</p>
+                <p class="detail">Sponsor : Sharp</p>
+              </div>
+            </a>
+          </article>
+        </li>
+        <li class="carte-item" data-type="domicile" data-annee="2010" data-nom="PSG 2010/11 Domicile Sponsor : Fly Emirates Maillot domicile du Paris Saint-Germain, saison 2010/11">
+          <article class="carte">
+            <a class="carte-lien" href="#">
+              <div class="photo-cadre">
+                <span class="tag">Domicile</span>
+                <div class="photo"><img src="images/psg-2010-11.jpg" alt="Maillot domicile du Paris Saint-Germain, saison 2010/11" loading="lazy" onerror="this.remove()"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><defs><clipPath id="c-g-psg-2010-11"><path d="M62 18 L22 42 L6 86 L40 100 L46 84 L46 186 L154 186 L154 84 L160 100 L194 86 L178 42 L138 18 Q100 46 62 18 Z"/></clipPath></defs><g clip-path="url(#c-g-psg-2010-11)"><rect width="200" height="200" fill="#00235A"/><path d="M6 86 L40 100" stroke="#E30613" stroke-width="8"/><path d="M194 86 L160 100" stroke="#E30613" stroke-width="8"/><path d="M62 18 Q100 46 138 18" fill="none" stroke="#E30613" stroke-width="8" stroke-linecap="round"/></g><path d="M62 18 L22 42 L6 86 L40 100 L46 84 L46 186 L154 186 L154 84 L160 100 L194 86 L178 42 L138 18 Q100 46 62 18 Z" fill="none" stroke="#000" stroke-width="4" stroke-linejoin="round"/><text x="100" y="104" text-anchor="middle" font-size="12" font-weight="800" fill="#FFFFFF" font-family="inherit">Fly Emirates</text></svg></div>
+              </div>
+              <div class="infos">
+                <h3>PSG</h3>
+                <p class="saison">Saison 2010/11</p>
+                <p class="detail">Sponsor : Fly Emirates</p>
+              </div>
+            </a>
+          </article>
+        </li>
+        <li class="carte-item" data-type="domicile" data-annee="2017" data-nom="Juventus 2017/18 Domicile Sponsor : Jeep Maillot domicile de la Juventus, saison 2017/18">
+          <article class="carte">
+            <a class="carte-lien" href="#">
+              <div class="photo-cadre">
+                <span class="tag">Domicile</span>
+                <div class="photo"><img src="images/juventus-2017-18.jpg" alt="Maillot domicile de la Juventus, saison 2017/18" loading="lazy" onerror="this.remove()"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><defs><clipPath id="c-g-juventus-2017-18"><path d="M62 18 L22 42 L6 86 L40 100 L46 84 L46 186 L154 186 L154 84 L160 100 L194 86 L178 42 L138 18 Q100 46 62 18 Z"/></clipPath></defs><g clip-path="url(#c-g-juventus-2017-18)"><rect width="200" height="200" fill="#FFFFFF"/><rect x="24" y="0" width="22" height="200" fill="#111111"/><rect x="68" y="0" width="22" height="200" fill="#111111"/><rect x="112" y="0" width="22" height="200" fill="#111111"/><rect x="156" y="0" width="22" height="200" fill="#111111"/><path d="M6 86 L40 100" stroke="#111111" stroke-width="8"/><path d="M194 86 L160 100" stroke="#111111" stroke-width="8"/><path d="M62 18 Q100 46 138 18" fill="none" stroke="#111111" stroke-width="8" stroke-linecap="round"/></g><path d="M62 18 L22 42 L6 86 L40 100 L46 84 L46 186 L154 186 L154 84 L160 100 L194 86 L178 42 L138 18 Q100 46 62 18 Z" fill="none" stroke="#000" stroke-width="4" stroke-linejoin="round"/><text x="100" y="104" text-anchor="middle" font-size="12" font-weight="800" fill="#111111" font-family="inherit">Jeep</text></svg></div>
+              </div>
+              <div class="infos">
+                <h3>Juventus</h3>
+                <p class="saison">Saison 2017/18</p>
+                <p class="detail">Sponsor : Jeep</p>
+              </div>
+            </a>
+          </article>
+        </li>
+        <li class="carte-item" data-type="domicile" data-annee="1970" data-nom="Brésil 1970 Domicile Équipementier : Athleta Maillot domicile du Brésil, Coupe du monde 1970">
+          <article class="carte">
+            <a class="carte-lien" href="#">
+              <div class="photo-cadre">
+                <span class="tag">Domicile</span>
+                <div class="photo"><img src="images/bresil-1970.jpg" alt="Maillot domicile du Brésil, Coupe du monde 1970" loading="lazy" onerror="this.remove()"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><defs><clipPath id="c-g-bresil-1970"><path d="M62 18 L22 42 L6 86 L40 100 L46 84 L46 186 L154 186 L154 84 L160 100 L194 86 L178 42 L138 18 Q100 46 62 18 Z"/></clipPath></defs><g clip-path="url(#c-g-bresil-1970)"><rect width="200" height="200" fill="#F7D117"/><path d="M6 86 L40 100" stroke="#00843D" stroke-width="8"/><path d="M194 86 L160 100" stroke="#00843D" stroke-width="8"/><path d="M62 18 Q100 46 138 18" fill="none" stroke="#00843D" stroke-width="8" stroke-linecap="round"/></g><path d="M62 18 L22 42 L6 86 L40 100 L46 84 L46 186 L154 186 L154 84 L160 100 L194 86 L178 42 L138 18 Q100 46 62 18 Z" fill="none" stroke="#000" stroke-width="4" stroke-linejoin="round"/></svg></div>
+              </div>
+              <div class="infos">
+                <h3>Brésil</h3>
+                <p class="saison">Saison 1970</p>
+                <p class="detail">Équipementier : Athleta</p>
+              </div>
+            </a>
+          </article>
+        </li>
+        <li class="carte-item" data-type="domicile" data-annee="2022" data-nom="Argentine 2022 Domicile Équipementier : Adidas Maillot domicile de l&#x27;Argentine, Coupe du monde 2022">
+          <article class="carte">
+            <a class="carte-lien" href="#">
+              <div class="photo-cadre">
+                <span class="tag">Domicile</span>
+                <div class="photo"><img src="images/argentine-2022.jpg" alt="Maillot domicile de l&#x27;Argentine, Coupe du monde 2022" loading="lazy" onerror="this.remove()"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><defs><clipPath id="c-g-argentine-2022"><path d="M62 18 L22 42 L6 86 L40 100 L46 84 L46 186 L154 186 L154 84 L160 100 L194 86 L178 42 L138 18 Q100 46 62 18 Z"/></clipPath></defs><g clip-path="url(#c-g-argentine-2022)"><rect width="200" height="200" fill="#FFFFFF"/><rect x="24" y="0" width="22" height="200" fill="#75AADB"/><rect x="68" y="0" width="22" height="200" fill="#75AADB"/><rect x="112" y="0" width="22" height="200" fill="#75AADB"/><rect x="156" y="0" width="22" height="200" fill="#75AADB"/><path d="M6 86 L40 100" stroke="#111111" stroke-width="8"/><path d="M194 86 L160 100" stroke="#111111" stroke-width="8"/><path d="M62 18 Q100 46 138 18" fill="none" stroke="#111111" stroke-width="8" stroke-linecap="round"/></g><path d="M62 18 L22 42 L6 86 L40 100 L46 84 L46 186 L154 186 L154 84 L160 100 L194 86 L178 42 L138 18 Q100 46 62 18 Z" fill="none" stroke="#000" stroke-width="4" stroke-linejoin="round"/></svg></div>
+              </div>
+              <div class="infos">
+                <h3>Argentine</h3>
+                <p class="saison">Saison 2022</p>
+                <p class="detail">Équipementier : Adidas</p>
+              </div>
+            </a>
+          </article>
+        </li>
+        <li class="carte-item" data-type="domicile" data-annee="2022" data-nom="Suisse 2022 Domicile Équipementier : Puma Maillot domicile de la Suisse, Coupe du monde 2022">
+          <article class="carte">
+            <a class="carte-lien" href="#">
+              <div class="photo-cadre">
+                <span class="tag">Domicile</span>
+                <div class="photo"><img src="images/suisse-2022.jpg" alt="Maillot domicile de la Suisse, Coupe du monde 2022" loading="lazy" onerror="this.remove()"><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false"><defs><clipPath id="c-g-suisse-2022"><path d="M62 18 L22 42 L6 86 L40 100 L46 84 L46 186 L154 186 L154 84 L160 100 L194 86 L178 42 L138 18 Q100 46 62 18 Z"/></clipPath></defs><g clip-path="url(#c-g-suisse-2022)"><rect width="200" height="200" fill="#D52B1E"/><path d="M6 86 L40 100" stroke="#FFFFFF" stroke-width="8"/><path d="M194 86 L160 100" stroke="#FFFFFF" stroke-width="8"/><path d="M62 18 Q100 46 138 18" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/></g><path d="M62 18 L22 42 L6 86 L40 100 L46 84 L46 186 L154 186 L154 84 L160 100 L194 86 L178 42 L138 18 Q100 46 62 18 Z" fill="none" stroke="#000" stroke-width="4" stroke-linejoin="round"/></svg></div>
+              </div>
+              <div class="infos">
+                <h3>Suisse</h3>
+                <p class="saison">Saison 2022</p>
+                <p class="detail">Équipementier : Puma</p>
+              </div>
+            </a>
+          </article>
+        </li>
+      </ul>
+
+      <div class="vide" id="vide" hidden>
+        <p>Aucun maillot trouvé pour ces filtres.</p>
+        <button class="bouton" type="button" id="reinit">Réinitialiser les filtres</button>
+      </div>
+    </section>
+
+    <section class="histoires" id="histoires" aria-labelledby="titre-histoires">
+      <div class="histoires-contenu">
+        <h2 id="titre-histoires">Les histoires derrière les maillots</h2>
+        <article class="histoire">
+          <h3>FC Barcelone, 2014/15</h3>
+          <p>Le maillot du triplé : Liga, Coupe du Roi et Ligue des champions, avec le trio Messi, Suárez et Neymar.</p>
+        </article>
+        <article class="histoire">
+          <h3>Manchester United, 1998/99</h3>
+          <p>Le maillot du triplé historique, avec une finale de Ligue des champions gagnée dans les arrêts de jeu.</p>
+        </article>
+        <article class="histoire">
+          <h3>Argentine, 2022</h3>
+          <p>Porté au Qatar par Lionel Messi lors du sacre mondial de 2022, après une finale remportée aux tirs au but contre la France.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <p>© 2026 Lorenzo</p>
+    <p>Projet M291 au CPNV</p>
+  </footer>
+</body>
+</html>
