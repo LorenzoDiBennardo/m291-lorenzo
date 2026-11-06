@@ -1,0 +1,358 @@
+[
+  {
+    "id": 1,
+    "titre": "Servette FC, maillot domicile",
+    "commune": "Genève",
+    "description": "Le maillot grenat du club genevois, à retrouver à la boutique du club.",
+    "prixMoyen": 99.0,
+    "estOuvert": true,
+    "tags": [
+      "grenat",
+      "genève",
+      "super-league"
+    ],
+    "image": "images/servette-fc.jpg",
+    "lieu": "Boutique du club (centre-ville)",
+    "coordonnees": {
+      "lat": 46.2044,
+      "lng": 6.1432
+    },
+    "horaires": {
+      "lundi": [
+        {
+          "ouverture": "09:00",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "13:30",
+          "fermeture": "18:30"
+        }
+      ],
+      "mardi": [
+        {
+          "ouverture": "09:00",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "13:30",
+          "fermeture": "18:30"
+        }
+      ],
+      "mercredi": [
+        {
+          "ouverture": "09:00",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "13:30",
+          "fermeture": "18:30"
+        }
+      ],
+      "jeudi": [
+        {
+          "ouverture": "09:00",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "13:30",
+          "fermeture": "18:30"
+        }
+      ],
+      "vendredi": [
+        {
+          "ouverture": "09:00",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "13:30",
+          "fermeture": "18:30"
+        }
+      ],
+      "samedi": [
+        {
+          "ouverture": "09:00",
+          "fermeture": "17:00"
+        }
+      ],
+      "dimanche": []
+    }
+  },
+  {
+    "id": 2,
+    "titre": "Lausanne-Sport, maillot domicile",
+    "commune": "Lausanne",
+    "description": "Le maillot bleu et blanc du club lausannois, en vente à la boutique du club.",
+    "prixMoyen": 89.0,
+    "estOuvert": true,
+    "tags": [
+      "bleu-et-blanc",
+      "lausanne",
+      "super-league"
+    ],
+    "image": "images/lausanne-sport.jpg",
+    "lieu": "Boutique du club (centre-ville)",
+    "coordonnees": {
+      "lat": 46.5197,
+      "lng": 6.6323
+    },
+    "horaires": {
+      "lundi": [],
+      "mardi": [
+        {
+          "ouverture": "10:00",
+          "fermeture": "18:30"
+        }
+      ],
+      "mercredi": [
+        {
+          "ouverture": "10:00",
+          "fermeture": "18:30"
+        }
+      ],
+      "jeudi": [
+        {
+          "ouverture": "10:00",
+          "fermeture": "18:30"
+        }
+      ],
+      "vendredi": [
+        {
+          "ouverture": "10:00",
+          "fermeture": "18:30"
+        }
+      ],
+      "samedi": [
+        {
+          "ouverture": "10:00",
+          "fermeture": "17:00"
+        }
+      ],
+      "dimanche": []
+    }
+  },
+  {
+    "id": 3,
+    "titre": "FC Sion, maillot domicile",
+    "commune": "Sion",
+    "description": "Le maillot rouge et blanc du club valaisan, à découvrir à la boutique du club.",
+    "prixMoyen": 95.0,
+    "estOuvert": true,
+    "tags": [
+      "rouge-et-blanc",
+      "valais",
+      "super-league"
+    ],
+    "image": "images/fc-sion.jpg",
+    "lieu": "Boutique du club (centre-ville)",
+    "coordonnees": {
+      "lat": 46.2293,
+      "lng": 7.359
+    },
+    "horaires": {
+      "lundi": [
+        {
+          "ouverture": "08:30",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "13:30",
+          "fermeture": "18:00"
+        }
+      ],
+      "mardi": [
+        {
+          "ouverture": "08:30",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "13:30",
+          "fermeture": "18:00"
+        }
+      ],
+      "mercredi": [
+        {
+          "ouverture": "08:30",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "13:30",
+          "fermeture": "18:00"
+        }
+      ],
+      "jeudi": [
+        {
+          "ouverture": "08:30",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "13:30",
+          "fermeture": "18:00"
+        }
+      ],
+      "vendredi": [
+        {
+          "ouverture": "08:30",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "13:30",
+          "fermeture": "18:00"
+        }
+      ],
+      "samedi": [
+        {
+          "ouverture": "09:00",
+          "fermeture": "16:00"
+        }
+      ],
+      "dimanche": []
+    }
+  },
+  {
+    "id": 4,
+    "titre": "Neuchâtel Xamax, maillot domicile",
+    "commune": "Neuchâtel",
+    "description": "Le maillot rouge et noir du club neuchâtelois, à voir à la boutique du club.",
+    "prixMoyen": 85.0,
+    "estOuvert": false,
+    "tags": [
+      "rouge-et-noir",
+      "neuchâtel",
+      "challenge-league"
+    ],
+    "image": "images/neuchatel-xamax.jpg",
+    "lieu": "Boutique du club (centre-ville)",
+    "coordonnees": {
+      "lat": 46.9896,
+      "lng": 6.9293
+    },
+    "horaires": {
+      "lundi": [
+        {
+          "ouverture": "09:00",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "14:00",
+          "fermeture": "18:00"
+        }
+      ],
+      "mardi": [
+        {
+          "ouverture": "09:00",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "14:00",
+          "fermeture": "18:00"
+        }
+      ],
+      "mercredi": [
+        {
+          "ouverture": "09:00",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "14:00",
+          "fermeture": "18:00"
+        }
+      ],
+      "jeudi": [
+        {
+          "ouverture": "09:00",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "14:00",
+          "fermeture": "18:00"
+        }
+      ],
+      "vendredi": [
+        {
+          "ouverture": "09:00",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "14:00",
+          "fermeture": "18:00"
+        }
+      ],
+      "samedi": [
+        {
+          "ouverture": "09:00",
+          "fermeture": "12:00"
+        }
+      ],
+      "dimanche": []
+    }
+  },
+  {
+    "id": 5,
+    "titre": "Yverdon Sport FC, maillot domicile",
+    "commune": "Yverdon-les-Bains",
+    "description": "Le maillot du club d'Yverdon-les-Bains, à découvrir à la boutique du club.",
+    "prixMoyen": 79.0,
+    "estOuvert": true,
+    "tags": [
+      "yverdon",
+      "nord-vaudois",
+      "football-romand"
+    ],
+    "image": "images/yverdon-sport.jpg",
+    "lieu": "Boutique du club (centre-ville)",
+    "coordonnees": {
+      "lat": 46.7785,
+      "lng": 6.641
+    },
+    "horaires": {
+      "lundi": [],
+      "mardi": [
+        {
+          "ouverture": "09:30",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "13:30",
+          "fermeture": "18:00"
+        }
+      ],
+      "mercredi": [
+        {
+          "ouverture": "09:30",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "13:30",
+          "fermeture": "18:00"
+        }
+      ],
+      "jeudi": [
+        {
+          "ouverture": "09:30",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "13:30",
+          "fermeture": "18:00"
+        }
+      ],
+      "vendredi": [
+        {
+          "ouverture": "09:30",
+          "fermeture": "12:00"
+        },
+        {
+          "ouverture": "13:30",
+          "fermeture": "18:00"
+        }
+      ],
+      "samedi": [
+        {
+          "ouverture": "09:30",
+          "fermeture": "16:00"
+        }
+      ],
+      "dimanche": []
+    }
+  }
+]
