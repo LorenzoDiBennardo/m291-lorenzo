@@ -116,5 +116,5 @@ Les horaires de l'échantillon sont des exemples inventés pour l'exercice, pas 
 
 ## 7. Ce qui reste à faire pour la suite
 
-- Ajouter les photos manquantes dans `images/` : les 8 premières fiches ont déjà la leur. Les 24 autres affichent le dessin de secours de la page.
+- Ajouter les photos manquantes dans `images/` : 31 fiches sur 32 ont leur photo. Il manque France 2018 (`images/france-2018.jpg`), qui affiche le dessin de secours.
 - Si tu ajoutes des fiches, garde les `id` uniques et relance la validation dans VS Code.
