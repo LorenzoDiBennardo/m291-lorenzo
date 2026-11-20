@@ -21,7 +21,6 @@ const PHOTOS_PRESENTES = new Set([
 
 const conteneur = document.getElementById("liste-cartes");
 const compteur = document.getElementById("compteur");
-const videFiltres = document.getElementById("vide");
 const champRecherche = document.getElementById("recherche");
 const puces = Array.prototype.slice.call(document.querySelectorAll(".puce"));
 
@@ -111,9 +110,17 @@ function creerCarte(m) {
 
 function afficherMaillots(liste) {
   conteneur.setAttribute("aria-busy", "false");
-  conteneur.innerHTML = liste.map(creerCarte).join("");
   compteur.textContent = liste.length + (liste.length > 1 ? " maillots" : " maillot");
-  videFiltres.hidden = liste.length !== 0;
+  if (liste.length === 0) {
+    conteneur.innerHTML =
+      "<div class='etat-vide' role='status'>" +
+        "<p>Aucun maillot ne correspond à votre recherche.</p>" +
+        "<button class='bouton' type='button' id='reinit'>Réinitialiser les filtres</button>" +
+      "</div>";
+    document.getElementById("reinit").addEventListener("click", reinitialiser);
+    return;
+  }
+  conteneur.innerHTML = liste.map(creerCarte).join("");
 }
 
 /* ---------- Filtres et recherche ---------- */
@@ -147,13 +154,32 @@ function brancherFiltres() {
       appliquerFiltres();
     });
   });
-  champRecherche.addEventListener("input", appliquerFiltres);
+  // Anti-rebond (S12-AV1) : le filtre attend 300 ms après la dernière frappe
+  champRecherche.addEventListener("input", debounce(appliquerFiltres, 300));
   champRecherche.form.addEventListener("submit", function (e) { e.preventDefault(); });
-  document.getElementById("reinit").addEventListener("click", function () {
-    puces.forEach(function (p) { p.setAttribute("aria-pressed", "false"); });
-    champRecherche.value = "";
-    appliquerFiltres();
-    champRecherche.focus();
+}
+
+function reinitialiser() {
+  puces.forEach(function (p) { p.setAttribute("aria-pressed", "false"); });
+  champRecherche.value = "";
+  appliquerFiltres();
+  champRecherche.focus();
+}
+
+/* ---------- Formulaire de contact (e3-4) ---------- */
+
+function brancherFormulaire() {
+  const formulaire = document.getElementById("form-contact");
+  formulaire.addEventListener("submit", function (event) {
+    event.preventDefault(); // pas de rechargement de la page
+
+    const nom = document.getElementById("champ-nom").value.trim();
+    const message = document.getElementById("champ-message").value.trim();
+    if (nom.length === 0 || message.length === 0) {
+      return; // les champs sont "required", le navigateur prévient déjà
+    }
+    document.getElementById("confirmation").hidden = false;
+    formulaire.reset();
   });
 }
 
@@ -162,7 +188,6 @@ function brancherFiltres() {
 async function chargerMaillots() {
   // État 1 : Chargement (Loading)
   conteneur.setAttribute("aria-busy", "true");
-  videFiltres.hidden = true;
   compteur.textContent = "";
   conteneur.innerHTML = "<p class='etat-chargement' role='status'>Chargement des données en cours...</p>";
 
@@ -199,4 +224,5 @@ async function chargerMaillots() {
 
 // Lancement automatique au chargement du script
 brancherFiltres();
+brancherFormulaire();
 chargerMaillots();
